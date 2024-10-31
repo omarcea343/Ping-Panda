@@ -1,4 +1,4 @@
-import { Inbox, Plus, User } from "lucide-react"
+import { Cog, Headphones, Inbox, Mic, Plus, User } from "lucide-react"
 import { PropsWithChildren } from "react"
 import { Icons } from "./icons"
 import Image from "next/image"
@@ -62,8 +62,45 @@ export const MockDiscordUI = ({ children }: PropsWithChildren) => {
                 height={32}
                 className="object-cover rounded-full mr-3"
               />
+              <span className="font-medium">PingPanda</span>
+            </div>
+
+            <div className="my-1 space-y-px">
+              {[...Array(4)].map((_, i) => (
+                <div
+                  key={i}
+                  className="flex items-center px-2 py-1.5 rounded text-gray-600 cursor-not-allowed"
+                >
+                  <div className="size-8 rounded-full bg-discord-background mr-3" />
+                  <span className="font-medium">User {i + 1}</span>
+                </div>
+              ))}
             </div>
           </div>
+        </div>
+
+        <div className="p-2 bg-[#292b2f] flex items-center">
+          <div className="size-8 rounded-full bg-brand-700 mr-2" />
+          <div className="flex-1">
+            <p className="text-sm font-medium text-white">You</p>
+            <p className="text-xs text-[#b9bbbe] flex items-center">
+              @your_account
+            </p>
+          </div>
+
+          <div className="flex items-center space-x-2">
+            <Mic className="size-5 text-[#b9bbbe] hover:text-white cursor-pointer" />
+            <Headphones className="size-5 text-[#b9bbbe] hover:text-white cursor-pointer" />
+            <Cog className="size-5 text-[#b9bbbe] hover:text-white cursor-pointer" />
+          </div>
+        </div>
+      </div>
+
+      {/* main content */}
+      <div className="flex-1 flex flex-col">
+        {/* dm header */}
+        <div className="h-16 bg-[#36393f] flex items-center px-4 shadow-sm border-b border-[#202225]">
+          <div>{/* TIME: 1:55:32 */}</div>
         </div>
       </div>
     </div>
