@@ -279,7 +279,22 @@ const Page = () => {
         </MaxWidthWrapper>
       </section>
 
-      <section></section>
+      <section className="relative py-24 sm:py-32 bg-white">
+        <MaxWidthWrapper className="flex flex-col items-center gap-16 sm:gap-20">
+          <div>
+            <h2 className="text-center text-base/7 font-semibold text-brand-600">
+              Real-World Experiences
+            </h2>
+            <Heading className="text-center">
+              Wha our customers say about us
+            </Heading>
+          </div>
+
+          <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
+            {/* TIME: 3:33:57 */}
+          </div>
+        </MaxWidthWrapper>
+      </section>
     </>
   )
 }
