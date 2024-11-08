@@ -4,7 +4,7 @@ import { MaxWidthWrapper } from "@/components/max-width-wrapper"
 import { MockDiscordUI } from "@/components/mock-discord-ui"
 import { ShinyButton } from "@/components/shiny-button"
 import { AnimatedList } from "@/components/ui/animated-list"
-import { Check } from "lucide-react"
+import { Check, Star } from "lucide-react"
 import Image from "next/image"
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter"
 import { oneDark } from "react-syntax-highlighter/dist/esm/styles/prism"
@@ -286,12 +286,27 @@ const Page = () => {
               Real-World Experiences
             </h2>
             <Heading className="text-center">
-              Wha our customers say about us
+              What our customers say about us
             </Heading>
           </div>
 
           <div className="mx-auto grid max-w-2xl grid-cols-1 px-4 lg:mx-0 lg:max-w-none lg:grid-cols-2 divide-y lg:divide-y-0 lg:divide-x divide-gray-200">
-            {/* TIME: 3:33:57 */}
+            {/* first customer testimonial */}
+            <div className="flex flex-auto flex-col gap-4 bg-brand-25 p-6 sm:p-8 lg:p-16 rounded-t-[2rem] lg:rounded-tr-none lg:rounded-l-[2rem]">
+              <div className="flex gap-0.5 mb-2 justify-center lg:justify-start">
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+                <Star className="size-5 text-brand-600 fill-brand-600" />
+              </div>
+
+              <p className="text-base sm:text-lg lg:text-lg/8 font-medium tracking-tight text-brand-950 text-center lg:text-left text-pretty">
+                PingPanda has been a game changer for me. I've been using it for
+                two months now and seeing sales pop up in real-time is super
+                satisfying.
+              </p>
+            </div>
           </div>
         </MaxWidthWrapper>
       </section>
