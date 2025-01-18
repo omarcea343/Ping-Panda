@@ -1,7 +1,7 @@
-import { Heading } from "./components/heading"
-import { MaxWidthWrapper } from "./components/max-width-wrapper"
 import { Check } from "lucide-react"
-import { ShinyButton } from "./components/shiny-button"
+import { Heading } from "@/app/components/heading"
+import { MaxWidthWrapper } from "@/app/components/max-width-wrapper"
+import { ShinyButton } from "@/app/components/shiny-button"
 
 const Page = () => {
   return (
@@ -20,8 +20,7 @@ const Page = () => {
             </div>
 
             <p className="text-base/7 text-gray-600 max-w-prose text-center text-pretty">
-              PingPanda is the easiest way to monitor your SaaS. Get instant
-              notifications for{" "}
+              PingPanda is the easiest way to monitor your SaaS. Get instant notifications for{" "}
               <span className="font-semibold text-gray-700">
                 sales, new users, or any other event
               </span>{" "}
