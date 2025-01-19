@@ -1,9 +1,10 @@
 import Link from "next/link"
 import { MaxWidthWrapper } from "./max-width-wrapper"
 import { SignOutButton } from "@clerk/nextjs"
+import { Button } from "@/components/ui/button"
 
 export const Navbar = () => {
-  const user = false
+  const user = true
 
   return (
     <nav className="sticky z=[100] h-16 inset-x-0 top-0 w-full border-b border-gray-200 bg-white/80 backdrop-blur-lg transition-all">
@@ -17,7 +18,7 @@ export const Navbar = () => {
             {user ? (
               <>
                 <SignOutButton>
-                  <button className=""></button>
+                  <Button>Sign Out</Button>
                 </SignOutButton>
               </>
             ) : null}
