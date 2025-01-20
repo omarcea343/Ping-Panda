@@ -82,6 +82,16 @@ const Page = () => {
                     title="💰 Payment Received"
                     content={{ amount: "$49.00", email: "zoe.martinex2001@gmail.com", plan: "PRO" }}
                   />
+                  <DiscordMessage
+                    avatarSrc="/brand-asset-profile-picture.png"
+                    avatarAlt="PingPanda Avatar"
+                    username="PingPanda"
+                    timestamp="Today at 5:11AM"
+                    badgeText="Milestone"
+                    badgeColor="#5865f2"
+                    title="🚀 Revenue Milestone Reached"
+                    content={{ recurringRevenue: "$5,000.00 USD", growth: "+8.2%" }}
+                  />
                 </AnimatedList>
               </MockDiscordUI>
             </div>
